@@ -2,6 +2,7 @@ Predicting Flank Wear in CNC Milling Machines :
 This project focuses on predicting flank wear in CNC milling tools using machine learning techniques. We analyze sensor data and machining parameters to build a simple yet effective model that can estimate tool wear and potentially help in predictive maintenance.
 
 👥 Team Members
+
 Jaajimoggala Ramaraju (230003028)
 
 Chinthala Prajay Varma (230003018)
