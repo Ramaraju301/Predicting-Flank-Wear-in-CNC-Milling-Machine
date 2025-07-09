@@ -74,4 +74,5 @@ Evaluation Metric: Root Mean Square Error (RMSE)
 MATLAB snippet for model evaluation:
 {   predictions_test = predict(lrModel, X_test);
 rmse_test = sqrt(mean((y_test - predictions_test).^2)); }
+
 To visualize performance, we plotted actual vs. predicted VB values.
