@@ -10,9 +10,11 @@ Chinthala Prajay Varma (230003018)
 Banoth Santhosh (230003014)
 
 🧩 Project Overview
+
 The goal is to build a data-driven model to estimate the flank wear (VB) of cutting tools during CNC milling operations. By analyzing sensor readings (like spindle vibration and motor current) along with machining parameters such as feed rate, depth of cut, and time, we aim to predict how worn a tool is — without direct physical inspection.
 
 📁 Dataset Summary
+
 We worked with data from 109 machining runs, split into:
 
 Training data: 52 runs
@@ -40,9 +42,11 @@ Target Variable
 VB (Flank Wear)
 
 🔍 Methodology
+
 We tried two different data preprocessing strategies (called Score 1 and Score 2) to prepare input features before training our model.
 
 🧪 Score 1: Simple Averaging
+
 For each run, we took the mean of all 9000 sensor data points for DC and VIB.
 
 Added feed rate and depth of cut as additional features.
@@ -50,6 +54,7 @@ Added feed rate and depth of cut as additional features.
 Final features: DC, VIB, Feed, DOC
 
 🧪 Score 2: Trimmed Mean
+
 To reduce noise, we removed the lowest and highest 1000 values from each sensor's data.
 
 Then took the mean of the remaining 7000 points.
@@ -59,6 +64,7 @@ Used time instead of feed & DOC.
 Final features: DC, VIB, Time
 
 🤖 Model Training & Evaluation
+
 We used a Linear Regression model in MATLAB for simplicity and interpretability.
 
 Tool: fitlm() function in MATLAB
